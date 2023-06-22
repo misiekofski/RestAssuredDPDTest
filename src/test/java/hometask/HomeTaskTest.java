@@ -17,6 +17,8 @@ public class HomeTaskTest {
         assertNotNull(user);
 
         assertEquals(user.getUserData().getId(), 2);
+
         assertEquals(user.getUserData().getEmail(), "janet.weaver@reqres.in");
+
     }
 }
