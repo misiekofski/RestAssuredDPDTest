@@ -24,7 +24,7 @@ public class CreateRepoTest {
                     .statusCode(201);
     }
 
-    @Test
+    @Test(dependsOnMethods = "shouldCreateRepositoryOnGithub")
     public void shouldEditRepositoryOnGithub() {
         RestAssured
                 .given()
@@ -36,7 +36,7 @@ public class CreateRepoTest {
                     .statusCode(200);
     }
 
-    @Test
+    @Test(dependsOnMethods = "shouldEditRepositoryOnGithub")
     public void deleteOldRepo() {
         RestAssured
                 .given()
