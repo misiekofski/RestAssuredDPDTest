@@ -1,4 +1,4 @@
-package myobj;
+package api.myobj;
 
 public class Support {
 

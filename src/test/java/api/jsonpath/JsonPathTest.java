@@ -1,4 +1,4 @@
-package jsonpath;
+package api.jsonpath;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;

@@ -1,9 +1,9 @@
-package otherhttpmethods;
+package api.otherhttpmethods;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import urls.ApiEndpoints;
+import api.urls.ApiEndpoints;
 
 import static org.hamcrest.Matchers.emptyOrNullString;
 import static org.hamcrest.Matchers.equalTo;

@@ -1,4 +1,4 @@
-package urls;
+package api.urls;
 
 public class ApiEndpoints {
     public static final String API_ROOT_URL = "https://api.github.com/";

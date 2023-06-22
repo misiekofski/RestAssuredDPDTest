@@ -1,4 +1,4 @@
-package walidacja;
+package api.walidacja;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Headers;

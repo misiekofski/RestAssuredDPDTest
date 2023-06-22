@@ -1,4 +1,4 @@
-package myobj;
+package api.myobj;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

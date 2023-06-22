@@ -1,4 +1,4 @@
-package start;
+package api.start;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;

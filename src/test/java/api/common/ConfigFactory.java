@@ -1,4 +1,4 @@
-package common;
+package api.common;
 
 import io.restassured.RestAssured;
 import io.restassured.config.RestAssuredConfig;
@@ -22,6 +22,16 @@ public class ConfigFactory {
                 .logConfig(logConfig().enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL))
                 .failureConfig(failureConfig().failureListeners(failureListener))
                 .redirect(redirectConfig().maxRedirects(1));
+    }
+
+    public static RestAssuredConfig reqresConfig() {
+        ResponseValidationFailureListener failureListener = (reqSpec, resSpec, response) ->
+                System.out.printf("We have a failure, " +
+                                "response status was %s and the body contained: %s",
+                        response.getStatusCode(), response.body().asPrettyString());
+
+        return RestAssured.config()
+                .failureConfig(failureConfig().failureListeners(failureListener));
     }
 
 }

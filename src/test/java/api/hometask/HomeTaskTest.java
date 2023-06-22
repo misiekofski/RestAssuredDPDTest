@@ -1,7 +1,7 @@
-package hometask;
+package api.hometask;
 
 import io.restassured.RestAssured;
-import myobj.AnotherUser;
+import api.myobj.AnotherUser;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

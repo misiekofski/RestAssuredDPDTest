@@ -1,7 +1,7 @@
-package mapowanie;
+package api.mapowanie;
 
 import io.restassured.RestAssured;
-import myobj.User;
+import api.myobj.User;
 import org.testng.annotations.Test;
 
 public class MappingTest {

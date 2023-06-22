@@ -1,4 +1,4 @@
-package config;
+package api.config;
 
 import io.restassured.RestAssured;
 import io.restassured.listener.ResponseValidationFailureListener;

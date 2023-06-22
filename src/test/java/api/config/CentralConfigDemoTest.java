@@ -1,16 +1,15 @@
-package config;
+package api.config;
 
+import api.common.ConfigFactory;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import static common.ConfigFactory.getDefaultConfig;
 
 public class CentralConfigDemoTest {
 
     @BeforeClass
     void setup() {
-        RestAssured.config = getDefaultConfig();
+        RestAssured.config = ConfigFactory.getDefaultConfig();
     }
 
 
